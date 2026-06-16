@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Happy Birthday, Snehalatha!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="stars"></div>
+    </div>
+
+    <main class="wrap">
+      <!-- Screen 1: Date quiz -->
+      <section class="card screen screen--active" id="introScreen">
+        <div class="screen__inner">
+          <p class="eyebrow">For Mumma</p>
+
+          <h1 class="message">
+            MUMMY! Apko pata hai bahut logon ko doubt hota hai that there is god or not. You know! How I know god
+            exists, Because scientists say if the gravity in the universe would be a slight less the universe would
+            fall apart or if it would be a bit more stronger it would have collapsed into a dot. But i have one more
+            reason...There are 7.5 Billion people in this world yet your are the
+            <span class="highlight">PERFECT MOTHER I COULD EVER HAVE</span>
+          </h1>
+
+          <p class="note">
+            Your software engineer son is not earning right now so I could just use my skills to create something
+            special for you
+          </p>
+
+          <div class="dateRow">
+            <button class="dateBtn" type="button" data-date="correct">17/06/1981</button>
+            <button class="dateBtn" type="button" data-date="wrong">16/07/1980</button>
+          </div>
+
+          <p class="hint">Choose the right date to get your gift</p>
+        </div>
+      </section>
+
+      <!-- Screen 2: Balloons -->
+      <section class="card screen" id="giftScreen" hidden>
+        <div class="screen__inner">
+          <p class="eyebrow">SNEHALATHA</p>
+          <h2 class="giftTitle">Tap the balloons to burst it and reveal your gifts</h2>
+          <div class="balloonGrid" id="balloonGrid"></div>
+          <div class="giftActions" id="giftActions">
+            <button class="btn btn--primary" id="finallyBtn" type="button" hidden>Finally!</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Wrong date popup -->
+    <dialog class="modal modal--laugh" id="laughModal">
+      <div class="modal__box">
+        <div class="laughEmoji" aria-hidden="true">😂</div>
+        <p class="laughText">kya mummy khud ke birth date mein confuse ho gyi</p>
+        <button class="btn btn--primary" id="tryAgainBtn" type="button">Try again</button>
+      </div>
+    </dialog>
+
+    <!-- Balloon reveal popup -->
+    <dialog class="modal modal--reveal" id="revealModal">
+      <form method="dialog" class="modal__box revealBox">
+        <button class="modal__close" type="submit" aria-label="Close">✕</button>
+        <div class="revealLetter" id="revealLetter">S</div>
+        <div class="revealWord" id="revealWord">Sweetest</div>
+        <div class="revealImgWrap">
+          <img id="revealImg" alt="Birthday memory" />
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Final message after all balloons -->
+    <dialog class="modal modal--final" id="finalModal">
+      <form method="dialog" class="modal__box finalBox">
+        <button class="modal__close" type="submit" aria-label="Close">✕</button>
+        <div class="finalTitle">Happy Birthday, Mumma</div>
+        <p class="finalText">
+          Mummy aap uss din train mein bol rahe the na ki mein baki baccho ki tarah jyada der tak roya nhi khali char
+          baar roya...wo isiliye kyunki formality ke liye meko rona pada nhi toh for me the most comfortable place in
+          the whole world was your womb where i felt the safest and the most alive. Happiest Birthday mummy...please
+          never think that i dont have interest in remembering your birthday its just that human brain is weak it
+          easily gets confused nhi toh mein aur papa aapke birthday ki baat unke china jane ke samay se kar rahe hein.
+          Sorry if you felt bad but you very well know We Love You The Most. Your are the most precious gift God gave
+          us. Love you Mummy.
+        </p>
+        <button class="btn btn--primary" type="submit">Close</button>
+      </form>
+    </dialog>
+
+    <audio id="giftMusic" preload="auto" loop>
+      <source
+        src="./music.mpeg"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
