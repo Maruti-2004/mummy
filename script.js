@@ -1,18 +1,23 @@
 const GIFTS = [
-  { letter: "S", word: "Sweetest", emoji: "🍬", imageBases: ["./images/01-s-sweetest"] },
-  { letter: "N", word: "Nurturing", emoji: "🤗", imageBases: ["./images/02-n-nurturing"] },
-  { letter: "E", word: "Elegant", emoji: "👑", imageBases: ["./images/03-e-elegant"] },
-  { letter: "H", word: "Heartwarming", emoji: "💖", imageBases: ["./images/04-h-heartwarming"] },
-  { letter: "A", word: "Awesome", emoji: "🌟", imageBases: ["./images/05-a-awesome"] },
-  { letter: "L", word: "Lovely", emoji: "🌸", imageBases: ["./images/06-l-lovely"] },
-  { letter: "A", word: "Adorable", emoji: "🥰", imageBases: ["./images/07-a-adorable"] },
-  { letter: "T", word: "Talented", emoji: "✨", imageBases: ["./images/08-t-talented"] },
-  { letter: "H", word: "Helpful", emoji: "🫶", imageBases: ["./images/09-h-helpful"] },
+  { letter: "S", word: "Sweetest", emoji: "🍬", imageBases: ["./images/01-s-sweetest", "./01-s-sweetest"] },
+  { letter: "N", word: "Nurturing", emoji: "🤗", imageBases: ["./images/02-n-nurturing", "./02-n-nurturing"] },
+  { letter: "E", word: "Elegant", emoji: "👑", imageBases: ["./images/03-e-elegant", "./03-e-elegant"] },
+  { letter: "H", word: "Heartwarming", emoji: "💖", imageBases: ["./images/04-h-heartwarming", "./04-h-heartwarming"] },
+  { letter: "A", word: "Awesome", emoji: "🌟", imageBases: ["./images/05-a-awesome", "./05-a-awesome"] },
+  { letter: "L", word: "Lovely", emoji: "🌸", imageBases: ["./images/06-l-lovely", "./06-l-lovely"] },
+  { letter: "A", word: "Adorable", emoji: "🥰", imageBases: ["./images/07-a-adorable", "./07-a-adorable"] },
+  { letter: "T", word: "Talented", emoji: "✨", imageBases: ["./images/08-t-talented", "./08-t-talented"] },
+  { letter: "H", word: "Helpful", emoji: "🫶", imageBases: ["./images/09-h-helpful", "./09-h-helpful"] },
   {
     letter: "A",
     word: "Always there",
     emoji: "🏡",
-    imageBases: ["./images/10-a-always-there", "./images/10-a-always_there"],
+    imageBases: [
+      "./images/10-a-always-there",
+      "./images/10-a-always_there",
+      "./10-a-always-there",
+      "./10-a-always_there",
+    ],
   },
 ];
 
